@@ -3,9 +3,6 @@
 .env.*
 !.env.example
 
-# 실행 결과물
-results/
-
 # Python
 __pycache__/
 *.py[cod]

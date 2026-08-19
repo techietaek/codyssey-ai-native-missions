@@ -1,0 +1,57 @@
+{
+  "date": "2026-03-15",
+  "recommendation": {
+    "recommended_city": "제주",
+    "weather": "3월 중순 평균 15°C 내외, 바람이 있으나 비교적 온화함",
+    "events": [
+      "유채꽃 관련 지역 행사",
+      "봄 시즌 지역 축제(일정 변동 가능)"
+    ],
+    "reason": "3월 중순은 제주가 봄꽃을 즐기기 좋은 시기입니다. 항공/숙박도 성수기 대비 부담이 적고, 야외 활동에 무리가 적습니다."
+  },
+  "places_by_city": {
+    "제주": [
+      {
+        "name": "제주 맛집 1",
+        "address": "제주특별시 어딘가로 1길 10",
+        "category": "음식점 > 한식",
+        "url": "https://place.example.com/제주/1",
+        "x": 126.51,
+        "y": 33.51
+      },
+      {
+        "name": "제주 맛집 2",
+        "address": "제주특별시 어딘가로 2길 20",
+        "category": "음식점 > 한식",
+        "url": "https://place.example.com/제주/2",
+        "x": 126.52,
+        "y": 33.52
+      },
+      {
+        "name": "제주 맛집 3",
+        "address": "제주특별시 어딘가로 3길 30",
+        "category": "음식점 > 한식",
+        "url": "https://place.example.com/제주/3",
+        "x": 126.53,
+        "y": 33.53
+      },
+      {
+        "name": "제주 맛집 4",
+        "address": "제주특별시 어딘가로 4길 40",
+        "category": "음식점 > 한식",
+        "url": "https://place.example.com/제주/4",
+        "x": 126.54,
+        "y": 33.54
+      },
+      {
+        "name": "제주 맛집 5",
+        "address": "제주특별시 어딘가로 5길 50",
+        "category": "음식점 > 한식",
+        "url": "https://place.example.com/제주/5",
+        "x": 126.55,
+        "y": 33.55
+      }
+    ]
+  },
+  "errors": []
+}
