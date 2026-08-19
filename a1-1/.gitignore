@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 데이터 내보내기 산출물
+exports/
+prompts_data.json
+
+# OS / 에디터
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,202 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="취미핏(HobbyFit) — 성향과 여건을 입력하면 AI가 맞춤 취미 3가지를 추천해주는 서비스" />
+<title>취미핏 · HobbyFit — AI 취미 추천</title>
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
+
+<!-- ===================== 헤더 / 네비게이션 ===================== -->
+<header class="site-header" id="top">
+  <nav class="nav container">
+    <a href="#top" class="brand">🎯 취미핏<span class="brand-en">HobbyFit</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#hero">홈</a></li>
+      <li><a href="#about">서비스 소개</a></li>
+      <li><a href="#recommend">AI 추천</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">문의하기</a></li>
+      <li>
+        <button class="theme-toggle" id="themeToggle" aria-label="다크모드 전환" title="다크모드 전환">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- ===================== 1. HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">AI 취미 큐레이터</p>
+      <h1>뭘 시작할지 모르겠다면,<br /><span class="grad">취미핏</span>이 골라드릴게요.</h1>
+      <p class="lead">
+        성향 · 여가시간 · 예산만 알려주세요. AI가 당신에게 꼭 맞는 취미 3가지를
+        추천 이유와 시작 팁까지 함께 제안합니다.
+      </p>
+      <div class="hero-cta">
+        <a href="#recommend" class="btn btn-primary">지금 추천받기</a>
+        <a href="#about" class="btn btn-ghost">어떻게 동작하나요?</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>3</strong><span>맞춤 추천</span></div>
+        <div><strong>30초</strong><span>소요 시간</span></div>
+        <div><strong>0원</strong><span>이용 요금</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 2. 서비스 소개 ===================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">이렇게 동작해요</h2>
+      <p class="section-sub">복잡한 검색 없이, 3단계면 끝납니다.</p>
+      <div class="cards">
+        <article class="card">
+          <div class="card-num">1</div>
+          <h3>나를 입력</h3>
+          <p>내향/외향, 주당 여가시간, 월 예산, 실내/실외 선호를 간단히 선택해요.</p>
+        </article>
+        <article class="card">
+          <div class="card-num">2</div>
+          <h3>AI가 분석</h3>
+          <p>입력을 바탕으로 AI가 당신에게 어울리는 취미를 골라 이유와 함께 정리해요.</p>
+        </article>
+        <article class="card">
+          <div class="card-num">3</div>
+          <h3>바로 시작</h3>
+          <p>추천 취미 3가지와 각각의 첫걸음 팁을 받아 오늘 바로 시작할 수 있어요.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 3. AI 추천 (핵심 기능) ===================== -->
+  <section class="section section-alt" id="recommend">
+    <div class="container">
+      <h2 class="section-title">AI 맞춤 취미 추천</h2>
+      <p class="section-sub">아래 정보를 입력하고 <b>추천받기</b>를 눌러보세요.</p>
+
+      <form class="reco-form" id="recoForm" novalidate>
+        <div class="field">
+          <label for="personality">성향</label>
+          <select id="personality" name="personality" required>
+            <option value="">선택하세요</option>
+            <option value="내향적">내향적 (혼자 몰입하는 편)</option>
+            <option value="외향적">외향적 (사람들과 함께가 좋아요)</option>
+            <option value="중간">중간 정도</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="hours">주당 여가시간</label>
+          <select id="hours" name="hours" required>
+            <option value="">선택하세요</option>
+            <option value="주 1~2시간">주 1~2시간</option>
+            <option value="주 3~5시간">주 3~5시간</option>
+            <option value="주 6시간 이상">주 6시간 이상</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="budget">월 예산</label>
+          <select id="budget" name="budget" required>
+            <option value="">선택하세요</option>
+            <option value="3만원 이하">3만원 이하</option>
+            <option value="3~10만원">3~10만원</option>
+            <option value="10만원 이상">10만원 이상</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="place">선호 장소</label>
+          <select id="place" name="place" required>
+            <option value="">선택하세요</option>
+            <option value="실내">실내</option>
+            <option value="실외">실외</option>
+            <option value="상관없음">상관없음</option>
+          </select>
+        </div>
+
+        <div class="field field-full">
+          <label for="note">자유 설명 <span class="optional">(선택)</span></label>
+          <textarea id="note" name="note" rows="3" maxlength="300"
+            placeholder="예) 손으로 만드는 걸 좋아하고, 최근 번아웃이 와서 마음이 편해지는 걸 찾고 있어요."></textarea>
+        </div>
+
+        <div class="form-actions field-full">
+          <button type="submit" class="btn btn-primary" id="submitBtn">✨ AI 추천받기</button>
+          <p class="form-msg" id="formMsg" role="alert"></p>
+        </div>
+      </form>
+
+      <!-- 결과 영역 -->
+      <div class="result-area" id="resultArea" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ===================== 4. FAQ ===================== -->
+  <section class="section" id="faq">
+    <div class="container narrow">
+      <h2 class="section-title">자주 묻는 질문</h2>
+      <div class="faq-list" id="faqList">
+        <details class="faq-item">
+          <summary>추천 결과는 어떻게 만들어지나요?</summary>
+          <p>입력한 성향·여가시간·예산·선호를 AI(Gemini API)에 전달하면, AI가 조건에 맞는 취미 3가지를 이유·시작 팁과 함께 생성합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>비용이 드나요?</summary>
+          <p>방문자는 무료로 이용할 수 있습니다. 서비스 운영자 측에서만 AI 호출에 대한 소액의 API 비용이 발생합니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>입력한 정보가 저장되나요?</summary>
+          <p>추천을 위해 AI에 일시적으로 전달될 뿐, 별도의 데이터베이스에 저장하지 않습니다.</p>
+        </details>
+        <details class="faq-item">
+          <summary>추천이 마음에 안 들면요?</summary>
+          <p>자유 설명란에 원하는 방향을 더 구체적으로 적고 다시 추천받으면 결과가 달라집니다.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. 문의하기 ===================== -->
+  <section class="section section-alt" id="contact">
+    <div class="container narrow">
+      <h2 class="section-title">문의하기</h2>
+      <p class="section-sub">서비스에 대한 의견이나 제안을 남겨주세요.</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="cName">이름</label>
+          <input type="text" id="cName" name="name" placeholder="홍길동" required />
+        </div>
+        <div class="field">
+          <label for="cEmail">이메일</label>
+          <input type="email" id="cEmail" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field field-full">
+          <label for="cMsg">내용</label>
+          <textarea id="cMsg" name="message" rows="4" placeholder="문의 내용을 입력하세요." required></textarea>
+        </div>
+        <div class="form-actions field-full">
+          <button type="submit" class="btn btn-primary">보내기</button>
+          <p class="form-msg" id="contactMsg" role="alert"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>🎯 취미핏 · HobbyFit — AI 취미 추천 서비스</p>
+    <p class="muted">Codyssey 미션 프로젝트 · Vanilla JS + Vercel Python Serverless + Gemini API</p>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>

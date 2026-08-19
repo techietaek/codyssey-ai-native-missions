@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "functions": {
+    "api/recommend.py": {
+      "memory": 512,
+      "maxDuration": 30
+    }
+  }
+}
