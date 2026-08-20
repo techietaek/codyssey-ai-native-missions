@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-21",
+  "recommendation": {
+    "recommended_city": "ㅋㅋ존재하지않는동네zzz99999",
+    "weather": "(테스트용) 존재하지 않는 임의 동네라 실제 날씨 데이터 없음",
+    "events": [
+      "(테스트용) 해당 지역 행사 정보 없음"
+    ],
+    "reason": "Kakao 맛집 검색 결과 0건(EMPTY_RESULT) 시나리오를 재현하기 위해 일부러 존재하지 않는 동네를 추천값으로 사용했습니다."
+  },
+  "places_by_city": {
+    "ㅋㅋ존재하지않는동네zzz99999": []
+  },
+  "errors": [
+    {
+      "step": "place_search",
+      "type": "EMPTY_RESULT",
+      "message": "0 results for query=ㅋㅋ존재하지않는동네zzz99999 맛집"
+    }
+  ]
+}
